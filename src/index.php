@@ -213,7 +213,7 @@
 
     <!-- footer -->
     <footer>
-      Copyright <a href="http://webukatu.com/">ウェブカツ!!WEBサービス部</a>. All Rights Reserved.
+      Copyright <a href="http://haru-oss.com/">DXエンジニア Haruyama</a>. All Rights Reserved.
     </footer>
 
   </body>
