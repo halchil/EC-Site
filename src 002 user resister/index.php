@@ -17,7 +17,7 @@
         <nav id="top-nav">
           <ul>
             <li><a href="signup.php" class="btn btn-primary">ユーザー登録</a></li>
-            <li><a href="login.php">ログイン</a></li>
+            <li><a href="login.html">ログイン</a></li>
           </ul>
         </nav>
       </div>
@@ -213,7 +213,7 @@
 
     <!-- footer -->
     <footer>
-      Copyright <a href="http://haru-oss.com/">Haru</a>. All Rights Reserved.
+      Copyright <a href="http://haru-oss.com/">DXエンジニア Haruyama</a>. All Rights Reserved.
     </footer>
 
   </body>
