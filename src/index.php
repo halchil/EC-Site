@@ -16,7 +16,7 @@
         <h1><a href="index.html">WEB MARKET</a></h1>
         <nav id="top-nav">
           <ul>
-            <li><a href="signup.html" class="btn btn-primary">ユーザー登録</a></li>
+            <li><a href="signup.php" class="btn btn-primary">ユーザー登録</a></li>
             <li><a href="login.html">ログイン</a></li>
           </ul>
         </nav>
