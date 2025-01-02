@@ -17,8 +17,6 @@ $ docker build -t my-db ./db
 ```
 `--build`オプションは、サービスに関連付けられた Docker イメージを、Dockerfile の定義に基づいて再ビルドするもの。
 
-
-
 ```
 http://xxx.xxx.xxx.xxx:8080
 ```

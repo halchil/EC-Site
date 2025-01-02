@@ -64,7 +64,7 @@
 
         <h1>ユーザー登録</h1>
             <form method="post"> <!-- 今回は自分自身に送信。これだとindex.phpが読み込まれまだ上から処理される　$_POSTに入る　ここにaction=mypage.phpなど入れるとそこにpost送信するように設定できる-->
-        <span class="err_msg"><?php if(!empty($err_msg['email'])) echo $err_msg['email']; ?></span>
+               <span class="err_msg"><?php if(!empty($err_msg['email'])) echo $err_msg['email']; ?></span>
                 <input type="text" name="email" placeholder="email" value="<?php if(!empty($_POST['email'])) echo $_POST['email'];?>"> <!--value属性を使ってリロードしても前回入力された情報を引きつぐ-->
 
         <span class="err_msg"><?php if(!empty($err_msg['pass'])) echo $err_msg['pass']; ?></span>

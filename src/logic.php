@@ -82,9 +82,17 @@ if(!empty($_POST)){
                 
                 //エラーが何もなければ、DB接続の準備
                 
-                $dsn = 'mysql:dbname=php_lesson11;host=localhost;charset=utf8';
-                $user = 'root';
-                $password = '';
+                 $dsn = 'mysql:dbname=mydatabase;host=192.168.56.118;port=3306;charset=utf8';
+                // $user = 'root';
+                // $password = '';
+
+                $host = '192.168.56.118'; // ホスト名（例: localhost）
+                $port = '3306'; // ポート番号（デフォルトは3306ですが、変更している場合はここを変更）
+                $dbname = 'mydatabase'; // データベース名
+                $user = 'myuser'; // ユーザー名
+                $db_password = 'mypassword'; // パスワード
+
+
                 $options = array(
                     PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION, //ATTR は "attribute"（属性）の略 キーとペア
                     PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
@@ -106,7 +114,8 @@ if(!empty($_POST)){
                 */
 
                 /*PHPのPDO（PHP Data Objects）を使ってデータベースに接続するためのものです。*/
-                $dbh = new PDO($dsn,$user,$password,$options);
+                 $dbh = new PDO($dsn,$user,$db_password,$options);
+                //$dbh = new PDO("mysql:host=$host;port=$port;dbname=$dbname", $username, $password);
 
                 /*PDOを使ってデータベースに新しいレコードを追加するためのSQL文を準備しています。*/
                 $stmt = $dbh->prepare('INSERT INTO users (email,pass,login_time) VALUES (:email,:pass,:login_time)');
